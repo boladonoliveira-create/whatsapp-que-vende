@@ -618,6 +618,18 @@ footer .links{display:flex;flex-wrap:wrap;gap:8px 16px}
   var CHECKOUT_URL = 'https://pay.kiwify.com.br/mzSvYGN';
   var buy = document.querySelectorAll('[data-buy]');
   if (CHECKOUT_URL) buy.forEach(function(a){ a.href = CHECKOUT_URL;});
+  buy.forEach(function(a){
+  a.addEventListener('click', function(){
+    if (typeof gtag === 'function') {
+      gtag('event', 'click_checkout', {
+        event_category: 'checkout',
+        event_label: 'Kiwify',
+        value: 24.90,
+        currency: 'BRL'
+      });
+    }
+  });
+});
   // No bloco de oferta e no CTA final o link vai ao checkout; nos demais também.
 
   // Variações de headline por parâmetro (?h=preco|caro|silencio) quando a página roda fora do viewer.
