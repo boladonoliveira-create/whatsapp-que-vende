@@ -1,0 +1,743 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><style>
+@font-face{font-family:Inter;font-weight:400;src:url(/fonts/Inter-Regular.ttf)}
+@font-face{font-family:Inter;font-weight:500;src:url(/fonts/Inter-Medium.ttf)}
+@font-face{font-family:Inter;font-weight:600;src:url(/fonts/Inter-SemiBold.ttf)}
+@font-face{font-family:Inter;font-weight:700;src:url(/fonts/Inter-Bold.ttf)}
+@font-face{font-family:Inter;font-weight:800;src:url(/fonts/Inter-ExtraBold.ttf)}
+@font-face{font-family:Lora;font-style:italic;font-weight:400 600;src:url(/fonts/LoraItalic-400.ttf)}
+@font-face{font-family:Lora;font-weight:400 600;src:url(/fonts/Lora-400.ttf)}
+@font-face{font-family:"JetBrains Mono";font-weight:400;src:url(/fonts/JetBrainsMono-Regular.ttf)}
+</style><!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1386855153433326');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1386855153433326&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+</head><body><title>WhatsApp que Vende</title>
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<style>
+/* Layout: página única, colunas de leitura de 1 a 2 colunas; seções alternam papel, branco e tinta, como o ebook. */
+:root{
+  --paper:#F7F7F5; --ink:#171717; --green:#16A34A; --forest:#14532D; --gray:#6B7280; --white:#FFFFFF;
+  --line:#E3E3DD; --mint:#E8F3EC; --warn-bg:#FBEFE8; --warn:#9A3412; --gray-d:#A3A3A0; --ink-2:#232323;
+  --sans:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  --serif:"Lora",Georgia,"Times New Roman",serif;
+  --mono:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  --gut:20px; --max:1080px; --r:14px;
+  color-scheme:light;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--paper);color:var(--ink);font:400 17px/1.55 var(--sans);margin:0;overflow-x:hidden;font-feature-settings:"cv11","ss03"}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+button{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--green);outline-offset:3px;border-radius:6px}
+.dark :focus-visible{outline-color:#4ADE80}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* estrutura */
+section{padding-block:56px}
+.wrap{width:100%;max-width:var(--max);margin-inline:auto;padding-inline:var(--gut)}
+.light{background:var(--paper)} .white{background:var(--white)} .dark{background:var(--ink);color:var(--white)}
+.eyebrow{display:flex;align-items:center;gap:.6em;font:700 12px/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--forest);margin:0 0 16px}
+.eyebrow::before{content:"";width:9px;height:9px;border-radius:50%;background:var(--green);flex:none}
+.dark .eyebrow{color:#86EFAC}
+h1,h2,h3{font-family:var(--sans);font-variation-settings:"opsz" 32;margin:0;text-wrap:balance}
+h1{font-weight:800;font-size:clamp(35px,9.6vw,58px);line-height:1.02;letter-spacing:-.04em}
+h2{font-weight:800;font-size:clamp(28px,7vw,42px);line-height:1.08;letter-spacing:-.035em}
+h3{font-weight:700;font-size:20px;line-height:1.25;letter-spacing:-.015em}
+p{margin:0}
+.lead{font-size:clamp(18px,4.6vw,21px);line-height:1.5;max-width:34em}
+.muted{color:var(--gray)} .dark .muted{color:var(--gray-d)}
+.stack{display:grid;gap:var(--s,16px);align-content:start}
+.mono{font-family:var(--mono);font-size:.9em}
+.ph{font-family:var(--mono);font-size:.82em;background:var(--mint);color:var(--forest);padding:.08em .4em;border-radius:5px;white-space:normal}
+.ph-todo{font-family:var(--mono);font-size:13px;border:1.5px dashed var(--gray);color:var(--gray);padding:2px 8px;border-radius:6px;display:inline-block;line-height:1.5}
+.dark .ph-todo{border-color:var(--gray-d);color:var(--gray-d)}
+
+/* botões */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5em;min-height:56px;padding:14px 26px;border-radius:12px;background:var(--green);color:#0B0B0B;font:700 18px/1.2 var(--sans);text-decoration:none;border:2px solid var(--green);cursor:pointer;text-align:center;transition:transform .15s,background .15s}
+.btn:hover{background:#22C55E;border-color:#22C55E}
+.btn:active{transform:translateY(1px)}
+.btn svg{flex:none}
+.btn-block{width:100%}
+.btn-ghost{background:transparent;color:inherit;border-color:currentColor;font-weight:600;font-size:17px}
+.btn-ghost:hover{background:rgba(255,255,255,.08);border-color:currentColor}
+.linkdown{display:inline-flex;align-items:center;min-height:44px;font-weight:600;color:var(--forest);text-underline-offset:4px}
+.micro{font-size:14px;line-height:1.45;color:var(--gray)}
+.dark .micro{color:var(--gray-d)}
+
+/* 1. topo */
+.hero{padding-block:28px 48px}
+.hero .wrap{display:grid;gap:32px}
+.hero-copy{display:grid;gap:18px;align-content:start}
+.tag{display:inline-flex;align-self:start;font:600 13px/1 var(--sans);letter-spacing:.1em;text-transform:uppercase;border:1.5px solid var(--ink);border-radius:999px;padding:8px 14px}
+.hero .cta-row{display:grid;gap:6px;justify-items:start;margin-top:6px}
+.hero .cta-row .btn{width:100%}
+.hero-art{position:relative;width:min(100%,360px);margin-inline:auto;padding-top:34px}
+.hero-art .shot{border-radius:12px;overflow:hidden;box-shadow:0 22px 44px -22px rgba(0,0,0,.45),0 0 0 1px rgba(0,0,0,.06);background:#fff}
+.bubble{position:absolute;top:0;left:-4px;z-index:2;background:var(--white);border-radius:14px 14px 14px 4px;padding:10px 18px;font:500 18px/1.2 var(--sans);box-shadow:0 8px 20px -8px rgba(0,0,0,.35);animation:pop .5s .2s backwards cubic-bezier(.2,.9,.3,1.2)}
+.pagetag{position:absolute;right:-2px;bottom:-14px;z-index:2;background:var(--ink);color:#fff;font:600 12px/1 var(--sans);letter-spacing:.08em;text-transform:uppercase;padding:9px 12px;border-radius:999px;animation:rise .5s .7s backwards}
+.hero-art .shot{animation:rise .6s .45s backwards}
+@keyframes pop{from{opacity:0;transform:scale(.8) translateY(8px)}}
+@keyframes rise{from{opacity:0;transform:translateY(14px)}}
+
+/* 2. dor */
+.chat{display:grid;gap:10px;margin:28px 0 0;max-width:420px}
+.msg{max-width:78%;width:fit-content;background:var(--white);border:1px solid var(--line);padding:11px 16px;border-radius:14px 14px 14px 4px;font-size:18px;line-height:1.3;animation:rise .5s backwards}
+.msg:nth-child(2){animation-delay:.12s}.msg:nth-child(3){animation-delay:.24s}.msg:nth-child(4){animation-delay:.36s}
+.msg.me{justify-self:end;background:#DCF3E4;border-color:#CBE9D5;border-radius:14px 14px 4px 14px;animation-delay:.5s}
+.seen{justify-self:end;font-size:13px;color:var(--gray);margin-top:-4px;display:flex;align-items:center;gap:6px}
+.pains{display:grid;gap:12px;margin-top:32px;padding:0;list-style:none}
+.pains li{display:flex;gap:14px;align-items:flex-start;padding:16px 0;border-top:1px solid var(--line)}
+.pains li:last-child{border-bottom:1px solid var(--line)}
+.pains svg{flex:none;margin-top:3px}
+.punch{font:800 clamp(22px,5.4vw,30px)/1.15 var(--sans);letter-spacing:-.03em;margin-top:32px;font-variation-settings:"opsz" 32;text-wrap:balance}
+
+/* 3. produto */
+.vs{display:grid;gap:14px;margin-top:28px}
+.vs-col{border-radius:var(--r);padding:22px 20px;display:grid;gap:14px;align-content:start}
+.vs-a{background:var(--paper);border:1px solid var(--line);color:#4B5563}
+.vs-b{background:var(--ink);color:#fff}
+.vs-col h3{font-size:14px;letter-spacing:.12em;text-transform:uppercase;font-weight:700}
+.vs-b h3{color:#86EFAC}
+.vs-col li{list-style:none;display:grid;gap:2px;line-height:1.4}
+.vs-col ul{margin:0;padding:0;display:grid;gap:16px}
+.vs-col li b{font-weight:600;color:inherit}
+.vs-a li b{color:#374151}
+.close-line{font-family:var(--serif);font-style:italic;font-size:clamp(19px,4.8vw,23px);margin-top:28px;line-height:1.4}
+
+/* 4. demonstração */
+.demo-grid{display:grid;gap:18px;margin-top:28px;grid-template-areas:"ctl" "fig" "panel" "note"}
+.dctl{grid-area:ctl;position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--ink);margin-inline:calc(var(--gut)*-1);padding:10px var(--gut) 8px;border-bottom:1px solid #2c2c2c;display:grid;gap:8px;min-width:0}
+.a-fig{grid-area:fig;margin:0;min-width:0}.a-panel{grid-area:panel}.a-note{grid-area:note}
+.live{font:600 15px/1.3 var(--sans);color:#86EFAC;min-height:20px}
+.pg{position:relative;overflow:hidden;border-radius:12px;width:100%;max-width:440px;margin-inline:auto;background:#F7F7F5;box-shadow:0 0 0 1px rgba(255,255,255,.12)}
+.pg .hl{position:absolute;left:9.4%;width:80.4%;border:3px solid var(--green);border-radius:12px;box-shadow:0 0 0 1000px rgba(23,23,23,.58);pointer-events:none;transition:top .35s ease,height .35s ease}
+.pg .hot{position:absolute;left:9.4%;width:80.4%;background:transparent;border:0;padding:0;cursor:pointer;border-radius:12px}
+.pg .hot:focus-visible{outline:3px solid #fff;outline-offset:-3px}
+.cap{font-size:13px;color:var(--gray-d);text-align:center;margin-top:12px;letter-spacing:.02em}
+.chips{display:flex;gap:8px;padding:0;margin:0;list-style:none;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.chips::-webkit-scrollbar{display:none}
+.chips li{flex:none}
+.chip{min-height:44px;padding:10px 14px;border-radius:999px;border:1.5px solid #4B5563;background:transparent;color:#fff;font:600 15px/1.1 var(--sans);cursor:pointer;transition:background .15s,border-color .15s,color .15s}
+.chip:hover{border-color:#86EFAC}
+.chip[aria-selected="true"]{background:var(--green);border-color:var(--green);color:#0B0B0B}
+.panel{background:var(--ink-2);border:1px solid #333;border-radius:var(--r);padding:20px;display:grid;gap:12px;min-height:178px;align-content:start}
+.panel .k{font:700 12px/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:#86EFAC}
+.panel .l{font:700 22px/1.2 var(--sans);letter-spacing:-.02em;font-variation-settings:"opsz" 32}
+.panel .q{font-family:var(--serif);font-style:italic;font-size:16px;line-height:1.5;color:#D4D4D0;border-left:3px solid var(--green);padding-left:14px}
+.panel .src{font-size:13px;color:var(--gray-d)}
+.demo-note{font-size:17px;max-width:34em;color:#D4D4D0}
+.mid-cta{margin-top:40px;padding-top:28px;border-top:1px solid #333;display:grid;gap:12px;justify-items:start}
+.mid-cta p{font-size:18px;max-width:30em}
+.mid-cta .btn{width:100%}
+
+/* 5. como funciona */
+.steps{display:grid;gap:12px;margin:28px 0 0;padding:0;list-style:none}
+.step{background:var(--white);border:1px solid var(--line);border-radius:var(--r);padding:20px;display:grid;gap:8px}
+.step .n{font:800 13px/1 var(--sans);letter-spacing:.14em;color:var(--forest);text-transform:uppercase}
+.step .t{font:700 24px/1.1 var(--sans);letter-spacing:-.03em;font-variation-settings:"opsz" 32}
+.step .a{color:var(--gray)}
+.step .ex{background:var(--paper);border-radius:10px;padding:12px 14px;font-size:16px;line-height:1.4}
+.step .ex b{font-weight:600}
+.step.reveal{animation:rise .5s backwards}
+.map-wrap{margin-top:36px;display:grid;gap:20px;align-items:center}
+.map-wrap .pgimg{width:min(100%,300px);margin-inline:auto;border-radius:10px;overflow:hidden;box-shadow:0 14px 30px -16px rgba(0,0,0,.4),0 0 0 1px rgba(0,0,0,.06)}
+
+/* 6. carrossel */
+.car-head{display:flex;justify-content:space-between;align-items:flex-end;gap:16px}
+.car-nav{display:none;gap:8px}
+.car-nav button{width:48px;height:48px;border-radius:50%;border:1.5px solid var(--ink);background:transparent;cursor:pointer;display:grid;place-items:center}
+.car-nav button:disabled{opacity:.3;cursor:default}
+.car{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;margin-top:24px;padding:4px var(--gut) 12px;margin-inline:calc(var(--gut)*-1);scroll-padding-inline:var(--gut);-webkit-overflow-scrolling:touch;scrollbar-width:none}
+.car::-webkit-scrollbar{display:none}
+.card{flex:0 0 min(86%,360px);scroll-snap-align:start;background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:20px;display:grid;gap:14px;align-content:start;min-width:0}
+.card .tagline{font:700 12px/1 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--forest)}
+.card .cli{background:var(--white);border:1px solid var(--line);border-radius:14px 14px 14px 4px;padding:9px 14px;width:fit-content;max-width:100%;font-size:17px}
+.card .sit{font-size:16px;color:#4B5563}
+.card .sug{background:var(--mint);border-radius:12px;padding:14px 16px;font-size:16.5px;line-height:1.5;position:relative}
+.card .sug .lab{display:inline-block;background:var(--forest);color:#fff;font:700 11px/1 var(--sans);letter-spacing:.12em;text-transform:uppercase;padding:6px 10px;border-radius:999px;margin-bottom:10px}
+.card .code{background:var(--ink);color:#E5E7EB;border-radius:12px;padding:14px 16px;font:400 13.5px/1.6 var(--mono);overflow-wrap:anywhere}
+.card .src{font-size:13px;color:var(--gray)}
+.card details{border-top:1px solid var(--line);padding-top:6px}
+.card summary{min-height:44px;display:flex;align-items:center;gap:8px;cursor:pointer;font-weight:600;color:var(--forest);list-style:none}
+.card summary::-webkit-details-marker{display:none}
+.card summary::after{content:"+";margin-left:auto;font-size:22px;line-height:1}
+.card details[open] summary::after{content:"\2212"}
+.card details img{border-radius:8px;box-shadow:0 0 0 1px var(--line);margin-top:8px}
+.adapt{display:grid;gap:8px;grid-template-columns:1fr 1fr}
+.adapt label{font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--forest);display:grid;gap:4px}
+.adapt input{min-height:44px;border:1.5px solid var(--line);border-radius:8px;padding:8px 10px;font:400 16px var(--sans);width:100%;min-width:0;background:var(--white);color:var(--ink)}
+.adapt input:focus-visible{outline:3px solid var(--green);outline-offset:1px}
+.adapt-hint{font-size:13px;color:var(--gray)}
+.dots{display:flex;gap:8px;justify-content:center;margin-top:12px}
+.dots button{width:10px;height:10px;border-radius:50%;border:0;padding:0;background:#C9C9C3;cursor:pointer;position:relative}
+.dots button::after{content:"";position:absolute;inset:-17px -6px}
+.dots button[aria-current="true"]{background:var(--ink);width:26px;border-radius:5px}
+
+/* 7. conteúdo */
+.blocks{display:grid;gap:12px;margin-top:28px}
+.blk{display:grid;grid-template-columns:96px 1fr;gap:16px;align-items:start;background:var(--white);border:1px solid var(--line);border-radius:var(--r);padding:16px}
+.blk .th{border-radius:6px;overflow:hidden;box-shadow:0 0 0 1px var(--line)}
+.blk h3{margin-bottom:6px}
+.blk p{font-size:16px;line-height:1.5;color:#374151}
+.blk .pn{font-size:13px;color:var(--gray);margin-top:6px}
+.bonus-list{margin:8px 0 0;padding:0;list-style:none;display:grid;gap:2px;font-size:16px}
+.source{font-size:14px;color:var(--gray);margin-top:28px;max-width:46em}
+.source a{color:var(--forest);text-underline-offset:3px;overflow-wrap:anywhere}
+
+/* 8. para quem */
+.two{display:grid;gap:14px;margin-top:28px}
+.col{border-radius:var(--r);padding:24px 20px;display:grid;gap:16px;align-content:start}
+.col.yes{background:var(--mint)} .col.no{background:var(--warn-bg)}
+.col h3{font-size:14px;letter-spacing:.12em;text-transform:uppercase;font-weight:700}
+.col.yes h3{color:var(--forest)} .col.no h3{color:var(--warn)}
+.col ul{margin:0;padding:0;list-style:none;display:grid;gap:14px}
+.col li{display:flex;gap:12px;align-items:flex-start;line-height:1.45}
+.col li svg{flex:none;margin-top:3px}
+.who{margin-top:20px;font-size:16px;color:#374151;max-width:46em}
+
+/* 9. oferta */
+.offer{display:grid;gap:28px;margin-top:8px}
+.offer-cover{width:min(46%,190px);margin-inline:auto;border-radius:10px;overflow:hidden;box-shadow:0 20px 40px -18px rgba(0,0,0,.7),0 0 0 1px rgba(255,255,255,.1)}
+.offer h2 span{display:block;font-size:.5em;font-weight:500;line-height:1.3;letter-spacing:-.01em;margin-top:12px;color:#D4D4D0;font-variation-settings:"opsz" 14}
+.incl{margin:0;padding:0;list-style:none;display:grid;gap:12px}
+.incl li{display:flex;gap:12px;align-items:flex-start;line-height:1.45}
+.incl svg{flex:none;margin-top:3px}
+.price-box{background:var(--ink-2);border:1px solid #333;border-radius:var(--r);padding:22px 20px;display:grid;gap:12px}
+.price{font:800 clamp(44px,12vw,60px)/1 var(--sans);letter-spacing:-.04em;font-variation-settings:"opsz" 32;font-variant-numeric:tabular-nums}
+.price small{font:500 16px var(--sans);letter-spacing:0;color:var(--gray-d);display:block;margin-bottom:6px}
+.fine{font-size:14px;color:var(--gray-d);display:grid;gap:8px}
+
+/* 10. FAQ */
+.faq{margin-top:28px;border-top:1px solid var(--line)}
+.faq details{border-bottom:1px solid var(--line)}
+.faq summary{list-style:none;cursor:pointer;display:flex;gap:16px;align-items:center;justify-content:space-between;min-height:64px;padding:14px 0;font:600 18px/1.3 var(--sans)}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary .pm{flex:none;width:32px;height:32px;border-radius:50%;border:1.5px solid var(--ink);display:grid;place-items:center;transition:transform .2s}
+.faq details[open] summary .pm{transform:rotate(45deg);background:var(--ink);color:#fff}
+.faq .ans{padding:0 0 20px;max-width:40em;color:#374151}
+
+/* 11. CTA final + rodapé */
+.final{text-align:left}
+.final .big{font:800 clamp(28px,7.4vw,46px)/1.08 var(--sans);letter-spacing:-.035em;font-variation-settings:"opsz" 32;text-wrap:balance;max-width:16em}
+.final .btn{width:100%}
+footer{background:#0E0E0E;color:var(--gray-d);padding-block:32px 40px;font-size:14px}
+footer .wrap{display:grid;gap:12px}
+footer a,.ans a{overflow-wrap:anywhere}
+footer a{color:inherit;text-decoration:underline}
+@media (max-width:599px){footer a{display:inline-block;padding-block:7px}}
+/* hero mobile: balão ancorado ao mockup; link "ver página" depois do produto */
+.hero-art .linkdown-m{display:none}
+.hero .t-m{display:none}
+.hero .t-s{display:none}
+@media (max-width:599px){
+  .hero{padding-block:20px 40px}
+  .hero .wrap{gap:20px}
+  .hero-copy{gap:12px}
+  .hero .cta-row .linkdown{display:none}
+  .hero-art{width:min(100%,420px);padding-top:28px}
+  .bubble{left:0}
+  .hero-art .linkdown-m{display:inline-flex;margin-top:22px}
+  .hero .t-d{display:none}
+  .hero .t-m{display:inline}
+  /* hierarquia tipográfica mobile: título > apoio > contexto > micro */
+  .hero .tag{justify-self:start;font-size:12px;letter-spacing:.09em;padding:7px 12px;border-width:1px}
+  #h1{font-size:clamp(31px,8.9vw,56px);line-height:1.04}
+  .hero .lead{font-size:17px;line-height:1.45;font-weight:500}
+  .hero-copy>p:not(.lead):not(.micro){font-size:15px;line-height:1.5;color:#4B5563;margin-top:-2px}
+  .hero .cta-row{margin-top:8px;gap:4px}
+  .hero .micro{font-size:13px;line-height:1.4;margin-top:-2px}
+}
+@media (max-width:340px){
+  .hero .t-m{display:none}
+  .hero .t-s{display:inline}
+  .hero .micro{font-size:12px}
+}
+footer .links{display:flex;flex-wrap:wrap;gap:8px 16px}
+
+/* barra fixa mobile */
+.bar{position:fixed;left:0;right:0;bottom:0;z-index:50;background:var(--ink);color:#fff;padding:10px var(--gut) calc(10px + env(safe-area-inset-bottom,0px));display:flex;gap:14px;align-items:center;justify-content:space-between;transform:translateY(110%);transition:transform .25s ease;border-top:1px solid #333}
+.bar.on{transform:none}
+.bar .p{display:grid;line-height:1.15}
+.bar .p b{font:800 22px/1 var(--sans);letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+.bar .p span{font-size:12px;color:var(--gray-d)}
+.bar .btn{min-height:48px;padding:10px 20px;font-size:16px;flex:1;max-width:260px}
+.spacer{height:0}
+
+/* telas maiores */
+@media (min-width:600px){
+  :root{--gut:28px}
+  section{padding-block:80px}
+  .vs,.two{grid-template-columns:1fr 1fr}
+  .steps{grid-template-columns:1fr 1fr}
+  .blocks{grid-template-columns:1fr 1fr}
+  .hero .cta-row{display:flex;flex-wrap:wrap;align-items:center;gap:6px 24px}
+  .hero .cta-row .btn{white-space:nowrap}
+  .hero .cta-row .btn,.mid-cta .btn,.final .btn{width:auto}
+  .micro-row{grid-column:1/-1}
+}
+@media (min-width:900px){
+  :root{--gut:40px}
+  .hero{padding-block:56px 80px}
+  .hero .wrap{grid-template-columns:1.15fr .85fr;gap:56px;align-items:center}
+  .hero-art{width:min(100%,380px)}
+  .demo-grid{grid-template-columns:minmax(0,440px) minmax(0,1fr);grid-template-rows:auto auto 1fr;gap:20px 56px;align-items:start;grid-template-areas:"fig ctl" "fig panel" "fig note"}
+  .dctl{position:static;margin:0;padding:0;border:0;background:transparent}
+  .live{display:none}
+  .pg{margin-inline:0}
+  .cap{text-align:left}
+  .chips{flex-direction:column;align-items:stretch;overflow:visible}
+  .chip{text-align:left;border-radius:12px;padding:12px 16px}
+  .steps{grid-template-columns:repeat(4,1fr)}
+  .map-wrap{grid-template-columns:300px 1fr;gap:48px}
+  .blocks{grid-template-columns:repeat(3,1fr)}
+  .blk{grid-template-columns:1fr;gap:14px}
+  .blk .th{width:110px}
+  .car{margin-inline:0;padding-inline:0;scroll-padding-inline:0}
+  .card{flex-basis:340px}
+  .car-nav{display:flex}
+  .dots{display:none}
+  .offer{grid-template-columns:260px 1fr;gap:56px;align-items:start}
+  .offer-cover{width:100%;margin:0}
+  .bar{display:none}
+}
+@media (min-width:1200px){ .hero .wrap{gap:80px} }
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+}
+</style>
+
+<header class="light hero" id="topo">
+  <div class="wrap">
+    <div class="hero-copy">
+      <span class="tag">Manual de consulta rápida</span>
+      <h1 id="h1">Pare de improvisar no WhatsApp.</h1>
+      <p class="lead">Encontre a situação, adapte a resposta e saiba qual é o próximo passo.</p>
+      <p><span class="t-d">Um manual para abrir com o cliente esperando: 50 mensagens prontas e 30 prompts de IA para responder, lidar com objeções e fazer follow-up.</span><span class="t-m">Cliente falou “tá caro”? “Vou pensar”? Abra o manual na situação, adapte a mensagem e saiba o que fazer depois. 50 mensagens prontas e 30 prompts de IA.</span><span class="t-s">Cliente falou “tá caro”? “Vou pensar”? Abra o manual, adapte a resposta e saiba o que fazer depois.</span></p>
+      <div class="cta-row" id="hero-cta">
+        <a class="btn" data-buy href="#oferta">Quero o WhatsApp que Vende — R$&nbsp;24,90</a>
+        <a class="linkdown" href="#demonstracao">Ver uma página por dentro&nbsp;↓</a>
+      </div>
+      <p class="micro">PDF · acesso pela área de membros da Kiwify</p>
+    </div>
+    <div class="hero-art" aria-label="Exemplo: o cliente escreve tá caro e o livro mostra a página 103">
+      <div class="bubble">tá caro</div>
+      <div class="shot"><img src="img/p103.webp" width="1026" height="1639" alt="Página 103 do ebook: Mensagem 26, Está caro, com situação, objetivo, quando usar, mensagem, adapte, não use quando e próximo passo." fetchpriority="high"></div>
+      <div class="pagetag">Página 103</div>
+      <a class="linkdown linkdown-m" href="#demonstracao">Ver uma página por dentro&nbsp;↓</a>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="white" id="dor">
+  <div class="wrap">
+    <p class="eyebrow">A conversa trava</p>
+    <h2>Você já recebeu uma destas?</h2>
+    <div class="chat" aria-label="Mensagens de clientes">
+      <div class="msg">qto é?</div>
+      <div class="msg">tá caro</div>
+      <div class="msg">vou pensar</div>
+      <div class="msg">vou ver e te aviso</div>
+      <div class="msg me">Fica R$ <span class="ph">[valor]</span></div>
+      <div class="seen"><svg width="18" height="12" viewBox="0 0 18 12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 6.5 4.5 10 11 2"/><path d="M7 9.5 8 10.5 16 2"/></svg>visualizado</div>
+    </div>
+    <p class="lead" style="margin-top:32px">Você responde rápido, com boa intenção. O cliente visualiza e some. Quase nunca foi falta de educação. Faltou olhar para a situação antes de responder.</p>
+    <ul class="pains">
+      <li><svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="#14532D" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="9"/><path d="M11 6v5.5M11 15v.5"/></svg><span>Você responde no automático e manda só o valor.</span></li>
+      <li><svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="#14532D" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="9"/><path d="M11 6v5.5M11 15v.5"/></svg><span>Você não sabe se espera, retoma ou para.</span></li>
+      <li><svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="#14532D" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="9"/><path d="M11 6v5.5M11 15v.5"/></svg><span>Você pede para a IA e sai um texto com cara de robô.</span></li>
+    </ul>
+    <p class="punch">O problema não é falta de mensagem pronta. É saber em que ponto a conversa está.</p>
+  </div>
+</section>
+
+<section class="light" id="produto">
+  <div class="wrap">
+    <p class="eyebrow">O produto</p>
+    <h2>Não é uma lista de frases. É um manual de situações.</h2>
+    <p class="lead" style="margin-top:16px">Cada mensagem fica dentro de uma situação. Você acha o que o cliente disse, vê para que serve a resposta, adapta e sabe o que fazer depois de enviar.</p>
+    <div class="vs">
+      <div class="vs-col vs-a">
+        <h3>Uma lista de frases</h3>
+        <ul>
+          <li><b>Mensagem → copiar</b></li>
+          <li><b>Serve para qualquer momento</b></li>
+          <li><b>Termina no envio</b></li>
+        </ul>
+      </div>
+      <div class="vs-col vs-b">
+        <h3>WhatsApp que Vende</h3>
+        <ul>
+          <li><b>Situação → objetivo → mensagem → adaptação → próximo passo</b></li>
+          <li><b>Diz quando usar e quando não usar</b></li>
+          <li><b>Termina no próximo passo:</b> perguntar, esperar, retomar ou parar</li>
+        </ul>
+      </div>
+    </div>
+    <p class="close-line">Pensado para abrir enquanto você conversa com o cliente.</p>
+  </div>
+</section>
+
+<section class="dark" id="demonstracao">
+  <div class="wrap">
+    <p class="eyebrow">Por dentro do ebook</p>
+    <h2>Uma situação, por dentro.</h2>
+    <p class="demo-note" style="margin-top:16px">Esta é a página 103 do ebook, sem edição. O cliente escreveu <i>tá caro</i>. Toque em cada campo.</p>
+    <div class="demo-grid">
+      <div class="dctl">
+        <ul class="chips" role="tablist" aria-label="Campos da página" id="chips">
+          <li role="presentation"><button class="chip" role="tab" data-f="sit" aria-selected="false">Situação</button></li>
+          <li role="presentation"><button class="chip" role="tab" data-f="obj" aria-selected="false">Objetivo</button></li>
+          <li role="presentation"><button class="chip" role="tab" data-f="qd" aria-selected="false">Quando usar</button></li>
+          <li role="presentation"><button class="chip" role="tab" data-f="msg" aria-selected="true">Mensagem</button></li>
+          <li role="presentation"><button class="chip" role="tab" data-f="adp" aria-selected="false">Adapte</button></li>
+          <li role="presentation"><button class="chip" role="tab" data-f="nao" aria-selected="false">Não use quando</button></li>
+          <li role="presentation"><button class="chip" role="tab" data-f="prox" aria-selected="false">Próximo passo</button></li>
+        </ul>
+        <p class="live" id="live" aria-hidden="true">Pronta para enviar depois de adaptar.</p>
+      </div>
+      <figure class="a-fig">
+        <div class="pg" id="pg">
+          <img src="img/p103.webp" width="1026" height="1639" alt="Página 103 do ebook, Mensagem 26: Está caro" loading="lazy">
+          <div class="hl" id="hl" style="top:36.4%;height:13.5%"></div>
+          <button class="hot" data-f="sit" style="top:16.5%;height:8.7%" aria-label="Situação"></button>
+          <button class="hot" data-f="obj" style="top:25.4%;height:5.9%" aria-label="Objetivo"></button>
+          <button class="hot" data-f="qd" style="top:31.4%;height:4.9%" aria-label="Quando usar"></button>
+          <button class="hot" data-f="msg" style="top:36.4%;height:13.5%" aria-label="Mensagem"></button>
+          <button class="hot" data-f="adp" style="top:51%;height:8.4%" aria-label="Adapte"></button>
+          <button class="hot" data-f="nao" style="top:60%;height:8.4%" aria-label="Não use quando"></button>
+          <button class="hot" data-f="prox" style="top:69.3%;height:13.6%" aria-label="Próximo passo"></button>
+        </div>
+        <figcaption class="cap">Página 103 · Mensagem 26 · Objeções</figcaption>
+      </figure>
+      <div class="panel a-panel" id="panel" role="tabpanel" aria-live="polite">
+          <span class="k">Mensagem</span>
+          <span class="l">Pronta para enviar depois de adaptar.</span>
+          <span class="q">Entendi! Ficou acima do que você esperava ou você viu algo parecido por menos?</span>
+          <span class="src">Trecho da página 103 do ebook</span>
+        </div>
+      <p class="demo-note a-note">Toda mensagem do livro tem essa mesma ficha. É por isso que dá para consultar no meio da conversa.</p>
+    </div>
+    <div class="mid-cta">
+      <p>Gostou de como a resposta vem organizada? As outras 49 mensagens seguem a mesma ficha.</p>
+      <a class="btn btn-ghost" data-buy href="#oferta">Quero consultar essas respostas</a>
+      <p class="micro">R$ 24,90 · PDF</p>
+    </div>
+  </div>
+</section>
+
+<section class="light" id="como-funciona">
+  <div class="wrap">
+    <p class="eyebrow">Como funciona</p>
+    <h2>Quatro passos. Sempre os mesmos.</h2>
+    <p class="lead" style="margin-top:16px">Você não precisa ler o livro de uma vez. Encontra a situação e usa. Aqui, com o exemplo <i>tá caro</i>:</p>
+    <ol class="steps">
+      <li class="step"><span class="n">1 · Identificar</span><span class="t">Onde está a conversa?</span><div class="ex">O cliente reagiu ao valor e não disse o motivo.</div></li>
+      <li class="step"><span class="n">2 · Adaptar</span><span class="t">O que muda no seu caso?</span><div class="ex">Você ajusta ao seu jeito e usa só o que é real.</div></li>
+      <li class="step"><span class="n">3 · Responder</span><span class="t">Uma mensagem clara e natural.</span><div class="ex">“Entendi! Ficou acima do que você esperava ou você viu algo parecido por menos?”</div></li>
+      <li class="step"><span class="n">4 · Conduzir</span><span class="t">Qual é o próximo passo?</span><div class="ex">A resposta mostra o caminho: opção mais enxuta, comparação, dúvida sobre o que entra ou sem prioridade agora.</div></li>
+    </ol>
+    <div class="map-wrap">
+      <div class="pgimg"><img src="img/p049.webp" width="1026" height="1639" alt="Página 49 do ebook: o mapa das conversas, com as 8 etapas, do primeiro contato ao pós-venda" loading="lazy"></div>
+      <div class="stack" style="--s:12px">
+        <h3>O mapa das conversas</h3>
+        <p>Na Parte 2, tudo se separa em 8 etapas, do primeiro contato ao pós-venda. Você não decora roteiro. Descobre onde a conversa está agora.</p>
+        <p class="micro">Página 49 do ebook</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="white" id="situacoes">
+  <div class="wrap">
+    <div class="car-head">
+      <div>
+        <p class="eyebrow">Mais situações</p>
+        <h2>Outras situações que o livro cobre.</h2>
+      </div>
+      <div class="car-nav" aria-hidden="false">
+        <button type="button" id="prev" aria-label="Anterior"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4 6 10l6 6"/></svg></button>
+        <button type="button" id="next" aria-label="Próximo"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m8 4 6 6-6 6"/></svg></button>
+      </div>
+    </div>
+    <p class="lead" style="margin-top:16px">Cada uma tem a mesma ficha. Os campos entre colchetes você troca pelo que é seu.</p>
+    <div class="car" id="car" tabindex="0" aria-label="Situações do ebook">
+      <article class="card">
+        <span class="tagline">Preço e orçamento</span>
+        <div class="cli">qto é?</div>
+        <div class="sug"><span class="lab">Mensagem</span><br><span id="m21">O <span class="ph">[serviço]</span> fica <span class="ph">[valor]</span>. Inclui <span class="ph">[item importante]</span>. Se quiser, vejo um horário pra você.</span></div>
+        <div class="adapt">
+          <label for="in-serv">Seu serviço<input id="in-serv" type="text" autocomplete="off" placeholder="serviço"></label>
+          <label for="in-val">Seu valor<input id="in-val" type="text" inputmode="decimal" autocomplete="off" placeholder="valor"></label>
+        </div>
+        <p class="adapt-hint">Teste o passo “adaptar”. Nada é salvo. Se o seu serviço for feminino, troque o “O” por “A”.</p>
+        <p class="src">Mensagem 21 · página 98</p>
+        <details><summary>Ver a página</summary><img src="img/p098.webp" width="1026" height="1639" alt="Página 98 do ebook: Mensagem 21, Cliente perguntou quanto custa" loading="lazy"></details>
+      </article>
+      <article class="card">
+        <span class="tagline">Objeção</span>
+        <div class="cli">vou pensar</div>
+        <div class="sug"><span class="lab">Mensagem</span><br>Claro, sem pressa! Se ficar alguma dúvida, me chama. Posso te dar um toque na <span class="ph">[dia/período]</span> pra ver se você decidiu?</div>
+        <p class="src">Mensagem 27 · página 104</p>
+        <details><summary>Ver a página</summary><img src="img/p104.webp" width="1026" height="1639" alt="Página 104 do ebook: Mensagem 27, Vou pensar" loading="lazy"></details>
+      </article>
+      <article class="card">
+        <span class="tagline">Follow-up</span>
+        <p class="sit">Você enviou o orçamento e ainda não teve resposta.</p>
+        <div class="sug"><span class="lab">Mensagem</span><br>Oi, <span class="ph">[nome]</span>! Conseguiu dar uma olhada no orçamento do <span class="ph">[serviço]</span>? Se ficou alguma dúvida sobre o valor ou o que está incluso, me fala que eu explico.</div>
+        <p class="src">Mensagem 36 · página 114</p>
+        <details><summary>Ver a página</summary><img src="img/p114.webp" width="1026" height="1639" alt="Página 114 do ebook: Mensagem 36, Primeiro follow-up após o orçamento" loading="lazy"></details>
+      </article>
+      <article class="card">
+        <span class="tagline">E quando você usa IA?</span>
+        <p class="sit">A IA não conhece o seu negócio. O prompt pede o contexto e diz o que ela não pode inventar. Neste, por exemplo:</p>
+        <div class="code">Não sugira desconto. Não invente o motivo do cliente nem argumentos que eu não passei.</div>
+        <p class="src">Prompt 11 · página 148</p>
+        <details><summary>Ver a página</summary><img src="img/p148.webp" width="1026" height="1639" alt="Página 148 do ebook: Prompt 11, Analisar está caro" loading="lazy"></details>
+      </article>
+    </div>
+    <div class="dots" id="dots" aria-label="Posição no carrossel"></div>
+  </div>
+</section>
+
+<section class="light" id="conteudo">
+  <div class="wrap">
+    <p class="eyebrow">O que vem dentro</p>
+    <h2>O que tem dentro das 233 páginas.</h2>
+    <p class="lead" style="margin-top:16px">Um PDF só, em formato de manual, com índice clicável das 50 mensagens e dos 30 prompts.</p>
+    <div class="blocks">
+      <article class="blk">
+        <div class="th"><img src="img/p049.webp" width="1026" height="1639" alt="Página 49: o mapa das conversas" loading="lazy"></div>
+        <div><h3>Mapa das conversas</h3><p>8 etapas, do primeiro contato ao pós-venda. Você descobre onde a conversa está e qual grupo de mensagens abrir.</p></div>
+      </article>
+      <article class="blk">
+        <div class="th"><img src="img/p098.webp" width="1026" height="1639" alt="Página 98: Mensagem 21" loading="lazy"></div>
+        <div><h3>50 mensagens</h3><p>Primeiro contato (1–10), entendimento (11–15), apresentação (16–20), preço e orçamento (21–25), objeção (26–35), follow-up (36–43), fechamento (44–47), pós-venda (48–50).</p></div>
+      </article>
+      <article class="blk">
+        <div class="th"><img src="img/p148.webp" width="1026" height="1639" alt="Página 148: Prompt 11" loading="lazy"></div>
+        <div><h3>30 prompts de IA</h3><p>Criar e adaptar (1–6), preço e orçamento (7–10), objeções (11–17), follow-up (18–22), análise da conversa (23–27), melhorar respostas (28–30). Cada um diz o que faz, quando usar e o que você precisa informar.</p></div>
+      </article>
+      <article class="blk">
+        <div class="th"><img src="img/p177.webp" width="1026" height="1639" alt="Página 177: Capítulo 6, Interpretando objeções" loading="lazy"></div>
+        <div><h3>Objeções e follow-up</h3><p>Como interpretar sem assumir o motivo, e como retomar sem perseguir.</p></div>
+      </article>
+      <article class="blk">
+        <div class="th"><img src="img/p207.webp" width="1026" height="1639" alt="Página 207: Bônus 1, Mapa de Objeções, Tá caro" loading="lazy"></div>
+        <div><h3>5 bônus de consulta rápida</h3>
+          <ul class="bonus-list"><li>Mapa de Objeções</li><li>Mapa de Follow-up</li><li>Checklist antes de enviar</li><li>Organização do WhatsApp Business</li><li>Rastreador simples de leads</li></ul>
+          <p class="pn">Já estão dentro do mesmo PDF.</p></div>
+      </article>
+      <article class="blk">
+        <div class="th"><img src="img/p004.webp" width="1026" height="1639" alt="Página 4: índice das 50 mensagens" loading="lazy"></div>
+        <div><h3>Índice clicável</h3><p>Toque no número da mensagem ou do prompt e vá direto para a página.</p></div>
+      </article>
+    </div>
+    <p class="source">O uso do WhatsApp como canal de atendimento e vendas para pequenos negócios é tratado em materiais do Sebrae. Fonte: <a href="https://meuatendimento.sebrae.com.br/sites/PortalSebrae/ufs/ba/artigos/venda-mais-com-o-whatsapp-estrategias-para-empresas-em-expansao,36ea1c09edf78910VgnVCM1000001b00320aRCRD" target="_blank" rel="noopener">“Venda mais com o WhatsApp: estratégias para empresas em expansão”</a>, Sebrae, atualizado em 18 de setembro de 2025.</p>
+  </div>
+</section>
+
+<section class="white" id="para-quem">
+  <div class="wrap">
+    <p class="eyebrow">Para quem é</p>
+    <h2>Veja se faz sentido para você.</h2>
+    <div class="two">
+      <div class="col yes">
+        <h3>É para você se</h3>
+        <ul>
+          <li><svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="#14532D" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4 11.5 4.5 4.5L18 6"/></svg>Você atende clientes pelo WhatsApp: MEI, prestador de serviço, autônomo, pequeno comércio ou vendedor.</li>
+          <li><svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="#14532D" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4 11.5 4.5 4.5L18 6"/></svg>Já olhou para a mensagem de um cliente sem saber o que responder.</li>
+          <li><svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="#14532D" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4 11.5 4.5 4.5L18 6"/></svg>Não sabe o que fazer depois de mandar o orçamento.</li>
+          <li><svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="#14532D" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4 11.5 4.5 4.5L18 6"/></svg>Quer usar IA, mas não sabe que contexto passar.</li>
+          <li><svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="#14532D" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4 11.5 4.5 4.5L18 6"/></svg>Prefere consultar na hora a ler tudo de uma vez.</li>
+        </ul>
+      </div>
+      <div class="col no">
+        <h3>Não é para você se</h3>
+        <ul>
+          <li><svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="#9A3412" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="m5 5 12 12M17 5 5 17"/></svg>Você espera uma mensagem que garanta a venda. Nenhuma garante. A decisão é do cliente.</li>
+          <li><svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="#9A3412" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="m5 5 12 12M17 5 5 17"/></svg>Você quer copiar e colar sem adaptar. As mensagens são para usar e adaptar.</li>
+          <li><svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="#9A3412" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="m5 5 12 12M17 5 5 17"/></svg>Você procura aulas ou um curso de vendas. Aqui é um manual de consulta.</li>
+          <li><svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="#9A3412" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="m5 5 12 12M17 5 5 17"/></svg>Você quer disparar mensagem para muita gente. O livro trata de conversa, não de lista.</li>
+          <li><svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="#9A3412" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="m5 5 12 12M17 5 5 17"/></svg>Você não conversa com clientes pelo WhatsApp.</li>
+        </ul>
+      </div>
+    </div>
+    <p class="who">Barbeiro, eletricista, fotógrafo, profissional de estética, técnico, designer. Você não precisa ter estudado vendas nem marketing.</p>
+  </div>
+</section>
+
+<section class="dark" id="oferta">
+  <div class="wrap">
+    <p class="eyebrow">A oferta</p>
+    <div class="offer">
+      <div class="offer-cover"><img src="img/p001.webp" width="1026" height="1639" alt="Capa do ebook WhatsApp que Vende, Manual de consulta rápida" loading="lazy"></div>
+      <div class="stack" style="--s:22px">
+        <h2>WhatsApp que Vende<span>50 mensagens prontas + 30 prompts de IA para responder clientes, lidar com objeções e fazer follow-up.</span></h2>
+        <ul class="incl">
+          <li><svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="#4ADE80" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4 11.5 4.5 4.5L18 6"/></svg>Ebook em PDF com 233 páginas, em formato de manual de consulta</li>
+          <li><svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="#4ADE80" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4 11.5 4.5 4.5L18 6"/></svg>Mapa das conversas, em 8 etapas</li>
+          <li><svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="#4ADE80" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4 11.5 4.5 4.5L18 6"/></svg>50 mensagens prontas, cada uma com situação, objetivo, quando usar, adapte, não use quando e próximo passo</li>
+          <li><svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="#4ADE80" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4 11.5 4.5 4.5L18 6"/></svg>30 prompts de IA para criar, adaptar e melhorar respostas</li>
+          <li><svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="#4ADE80" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4 11.5 4.5 4.5L18 6"/></svg>Objeções e follow-up: como interpretar, retomar e saber parar</li>
+          <li><svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="#4ADE80" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4 11.5 4.5 4.5L18 6"/></svg>5 bônus de consulta rápida, dentro do mesmo PDF</li>
+          <li><svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="#4ADE80" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4 11.5 4.5 4.5L18 6"/></svg>Índice clicável das 50 mensagens e dos 30 prompts</li>
+        </ul>
+        <div class="price-box">
+          <div class="price"><small>Valor</small>R$&nbsp;24,90</div>
+          <a class="btn btn-block" id="buy-main" data-buy href="#oferta">Quero o WhatsApp que Vende</a>
+          <div class="fine">
+            <span>PDF · acesso pela área de membros da Kiwify</span>
+            <span>Pagamento processado pela Kiwify</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="light" id="faq">
+  <div class="wrap">
+    <p class="eyebrow">Perguntas frequentes</p>
+    <h2>Antes de comprar.</h2>
+    <div class="faq">
+      <details open><summary>Isso é um curso?<span class="pm" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 14 14" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M7 1v12M1 7h12"/></svg></span></summary><div class="ans">Não. É um manual de consulta em PDF. Você abre, acha a situação e usa.</div></details>
+      <details><summary>Garante que vou vender mais?<span class="pm" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 14 14" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M7 1v12M1 7h12"/></svg></span></summary><div class="ans">Não. Nenhuma mensagem garante que o cliente vai comprar. O livro ajuda você a responder com mais clareza e a saber o próximo passo. A decisão é do cliente.</div></details>
+      <details><summary>Posso copiar e colar as mensagens?<span class="pm" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 14 14" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M7 1v12M1 7h12"/></svg></span></summary><div class="ans">São prontas para usar e adaptar. Você troca nomes, valores, prazos e o que mais precisar, e usa só informação que seja sua.</div></details>
+      <details><summary>Serve para o meu tipo de negócio?<span class="pm" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 14 14" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M7 1v12M1 7h12"/></svg></span></summary><div class="ans">O livro foi feito para quem atende cliente pelo WhatsApp: MEI, prestador de serviço, autônomo, pequeno comércio e vendedor. Os exemplos vêm de serviços, como instalação e agendamento, e você adapta ao seu.</div></details>
+      <details><summary>Preciso saber usar IA?<span class="pm" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 14 14" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M7 1v12M1 7h12"/></svg></span></summary><div class="ans">Não. Os prompts são instruções que você cola na ferramenta de IA que já usa e preenche com o que é seu. Se não quiser usar IA, as 50 mensagens funcionam sozinhas.</div></details>
+      <details><summary>Funciona no WhatsApp Business?<span class="pm" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 14 14" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M7 1v12M1 7h12"/></svg></span></summary><div class="ans">As mensagens servem para qualquer WhatsApp. O Bônus 4 trata da organização do WhatsApp Business: etiquetas e respostas rápidas.</div></details>
+      <details><summary>Preciso ler tudo antes de usar?<span class="pm" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 14 14" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M7 1v12M1 7h12"/></svg></span></summary><div class="ans">Não. Para uso imediato, comece pelo mapa e pelo índice das 50 mensagens. A Parte 1 explica o raciocínio, se você quiser entender antes.</div></details>
+      <details><summary>Como recebo o material?<span class="pm" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 14 14" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M7 1v12M1 7h12"/></svg></span></summary><div class="ans">Pela área de membros da Kiwify.</div></details>
+      <details><summary>Como falo com alguém se tiver problema?<span class="pm" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 14 14" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M7 1v12M1 7h12"/></svg></span></summary><div class="ans">Escreva para <a href="mailto:contato.whatsappquevende@gmail.com">contato.whatsappquevende@gmail.com</a>.</div></details>
+    </div>
+  </div>
+</section>
+
+<section class="dark final" id="final">
+  <div class="wrap stack" style="--s:20px">
+    <p class="big">Você não precisa falar mais. Precisa saber o que fazer com a conversa que já começou.</p>
+    <p class="lead muted">Da próxima vez que o cliente escrever “tá caro”, você já sabe em que página abrir.</p>
+    <a class="btn" id="buy-final" data-buy href="#oferta">Quero o WhatsApp que Vende — R$&nbsp;24,90</a>
+    <p class="micro">PDF · acesso pela área de membros da Kiwify</p>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>PDF · acesso pela área de membros da Kiwify</span>
+    <span>Suporte: <a href="mailto:contato.whatsappquevende@gmail.com">contato.whatsappquevende@gmail.com</a></span>
+    <div class="links"><a href="politica-de-privacidade.html">Política de Privacidade</a><a href="termos-de-uso.html">Termos de Uso</a></div>
+    <span>WhatsApp que Vende · Manual de consulta rápida</span>
+  </div>
+</footer>
+
+<div class="bar" id="bar" aria-hidden="true">
+  <div class="p"><b>R$&nbsp;24,90</b><span>PDF · 233 páginas</span></div>
+  <a class="btn" data-buy href="#oferta" tabindex="-1">Quero o livro</a>
+</div>
+
+<script>
+(function(){
+  // Link do checkout (Kiwify). Todos os botões [data-buy] usam esta constante.
+  var CHECKOUT_URL = 'https://pay.kiwify.com.br/mzSvYGN';
+  var buy = document.querySelectorAll('[data-buy]');
+  if (CHECKOUT_URL) buy.forEach(function(a){ a.href = CHECKOUT_URL;});
+  // No bloco de oferta e no CTA final o link vai ao checkout; nos demais também.
+
+  // Variações de headline por parâmetro (?h=preco|caro|silencio) quando a página roda fora do viewer.
+  try {
+    var h = new URLSearchParams(location.search).get('h');
+    var map = {preco:'Seu cliente pediu o preço e sumiu?', caro:'O cliente mandou “tá caro”. E agora?', silencio:'O cliente visualizou e não respondeu. E agora?'};
+    if (h && map[h]) document.getElementById('h1').textContent = map[h];
+  } catch(e){}
+
+  // Demonstração
+  var F = {
+    sit:{k:'Situação', t:36, top:16.5, h:8.7, l:'Você reconhece o que o cliente disse.', q:'“o cliente reage ao valor, sem dar o motivo.”'},
+    obj:{k:'Objetivo', top:25.4, h:5.9, l:'Você sabe o que a resposta precisa conseguir.', q:'“entender o que ele está comparando ou esperando, antes de responder à objeção.”'},
+    qd:{k:'Quando usar', top:31.4, h:4.9, l:'Você sabe se é o momento.', q:'“quando o motivo não está claro.”'},
+    msg:{k:'Mensagem', top:36.4, h:13.5, l:'Pronta para enviar depois de adaptar.', q:'“Entendi! Ficou acima do que você esperava ou você viu algo parecido por menos?”'},
+    adp:{k:'Adapte', top:51, h:8.4, l:'Você deixa com o seu jeito.', q:'“ajuste ao seu jeito. Uma versão menos direta: "Entendi. O que você achou do valor?"”'},
+    nao:{k:'Não use quando', top:60, h:8.4, l:'Você evita a mensagem errada na hora errada.', q:'“ele já explicou. "Achei mais barato", mensagem 30. "Tem desconto?", 31. "Por que está nesse valor?", 32.”'},
+    prox:{k:'Próximo passo', top:69.3, h:13.6, l:'Você sabe o que fazer depois de enviar.', q:'“a resposta mostra o caminho. Acima do orçamento: veja se existe uma opção real mais enxuta (18). Comparação: 30. Dúvida sobre o que entra: 25. Sem prioridade agora: 28.”'}
+  };
+  var hl = document.getElementById('hl'), panel = document.getElementById('panel'), live = document.getElementById('live');
+  function pick(id){
+    var f = F[id]; if(!f) return;
+    hl.style.top = f.top+'%'; hl.style.height = f.h+'%'; live.textContent = f.l;
+    var ch = document.getElementById('chips');
+    document.querySelectorAll('#chips .chip').forEach(function(c){
+      var on = c.dataset.f===id; c.setAttribute('aria-selected', on ? 'true':'false');
+      if(on && ch.scrollWidth>ch.clientWidth){ ch.scrollTo({left: c.parentNode.offsetLeft - (ch.clientWidth - c.offsetWidth)/2, behavior:'smooth'}); }
+    });
+    panel.innerHTML = '';
+    [['k',f.k],['l',f.l],['q',f.q],['src','Trecho da página 103 do ebook']].forEach(function(p){
+      var s = document.createElement('span'); s.className = p[0]; s.textContent = p[1]; panel.appendChild(s);
+    });
+  }
+  document.querySelectorAll('#chips .chip, #pg .hot').forEach(function(b){ b.addEventListener('click', function(){ pick(b.dataset.f); }); });
+
+  // Carrossel
+  var car = document.getElementById('car'), dots = document.getElementById('dots');
+  var cards = car.querySelectorAll('.card'), prev = document.getElementById('prev'), next = document.getElementById('next');
+  cards.forEach(function(c,i){
+    var d = document.createElement('button'); d.type='button'; d.setAttribute('aria-label','Situação '+(i+1));
+    d.addEventListener('click', function(){ car.scrollTo({left: c.offsetLeft - car.offsetLeft - parseFloat(getComputedStyle(car).paddingLeft||0), behavior:'smooth'}); });
+    dots.appendChild(d);
+  });
+  function upd(){
+    var x = car.scrollLeft, best = 0, bd = 1e9;
+    cards.forEach(function(c,i){ var d = Math.abs(c.offsetLeft - car.offsetLeft - parseFloat(getComputedStyle(car).paddingLeft||0) - x); if(d<bd){bd=d;best=i;} });
+    dots.querySelectorAll('button').forEach(function(d,i){ if(i===best) d.setAttribute('aria-current','true'); else d.removeAttribute('aria-current'); });
+    prev.disabled = x < 4; next.disabled = x + car.clientWidth >= car.scrollWidth - 4;
+  }
+  car.addEventListener('scroll', function(){ window.requestAnimationFrame(upd); }, {passive:true});
+  window.addEventListener('resize', upd); upd();
+  function step(dir){ var w = cards[0].getBoundingClientRect().width + 14; car.scrollBy({left: dir*w, behavior:'smooth'}); }
+  prev.addEventListener('click', function(){ step(-1); }); next.addEventListener('click', function(){ step(1); });
+  car.addEventListener('keydown', function(e){ if(e.key==='ArrowRight'){step(1);e.preventDefault();} if(e.key==='ArrowLeft'){step(-1);e.preventDefault();} });
+
+  // Adaptar a mensagem 21 (só no navegador, nada é salvo)
+  var m = document.getElementById('m21'), s = document.getElementById('in-serv'), v = document.getElementById('in-val');
+  function ph(t){ return '<span class="ph">'+t+'</span>'; }
+  function esc(t){ return t.replace(/[&<>"]/g, function(c){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]; }); }
+  function render(){
+    var a = s.value.trim(), b = v.value.trim();
+    m.innerHTML = 'O ' + (a ? esc(a) : ph('[serviço]')) + ' fica ' + (b ? esc(b) : ph('[valor]')) + '. Inclui ' + ph('[item importante]') + '. Se quiser, vejo um horário pra você.';
+  }
+  s.addEventListener('input', render); v.addEventListener('input', render);
+
+  // Barra fixa (mobile): aparece depois do CTA do topo e some na oferta e no CTA final
+  var bar = document.getElementById('bar');
+  var hero = document.getElementById('hero-cta'), offer = document.getElementById('oferta'), fin = document.getElementById('final');
+  var st = {hero:true, offer:false, fin:false};
+  function setBar(){ var on = !st.hero && !st.offer && !st.fin; bar.classList.toggle('on', on); bar.setAttribute('aria-hidden', on?'false':'true'); bar.querySelector('a').tabIndex = on?0:-1; }
+  if ('IntersectionObserver' in window){
+    var io = function(el,key){ new IntersectionObserver(function(es){ st[key] = es[0].isIntersecting; setBar(); }, {threshold:0}).observe(el); };
+    io(hero,'hero'); io(offer,'offer'); io(fin,'fin');
+  }
+  // espaço no fim da página para a barra não cobrir o rodapé
+  var ft = document.querySelector('footer');
+  function pad(){ ft.style.paddingBottom = (window.innerWidth<900 ? 88 : 40)+'px'; } pad(); window.addEventListener('resize', pad);
+})();
+</script>
+</body></html>
